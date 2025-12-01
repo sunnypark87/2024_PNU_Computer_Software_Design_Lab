@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:src="@drawable/sel_img"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/selcountry_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="원하는 여행지를 \n선택하세요."
+                android:textColor="@color/black"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/japan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=" 일본 - NRT"
+                android:paddingTop="7dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:textSize="30dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#AAAAAA"></View>
+            <TextView
+                android:id="@+id/usa"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=" 미국 - JFK"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:paddingTop="7dp"
+                android:textSize="30dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#AAAAAA"></View>
+            <TextView
+                android:id="@+id/france"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=" 프랑스 - CDG"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:paddingTop="7dp"
+                android:textSize="30dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#AAAAAA"></View>
+            <TextView
+                android:id="@+id/philippines"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=" 필리핀 - MNL"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:paddingTop="7dp"
+                android:textSize="30dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#AAAAAA"></View>
+            <TextView
+                android:id="@+id/indonesia"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=" 인도네시아 - DPS"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:paddingTop="7dp"
+                android:textSize="30dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#AAAAAA"></View>
+            <Button
+                android:id="@+id/selectCountryBtn"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:foreground="@drawable/rounded_button"
+                android:background="@drawable/rounded_button"
+                android:text="선택"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"
+                />
+
+            <Button
+                android:id="@+id/backToMainBtn"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginHorizontal="20dp"
+                android:foreground="@drawable/rounded_button"
+                android:background="@drawable/rounded_button"
+                android:text="뒤로 가기"
+                android:textColor="@android:color/black"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/flightRecycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/airplane"
+            android:translationY="20dp"
+            android:translationX="148dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/seat"
+            android:translationY="120dp"
+            android:translationX="275dp">
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/time"
+            android:translationY="120dp"
+            android:translationX="40dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/departureFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출발"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:translationX="49dp"
+            android:translationY="37dp"></TextView>
+
+        <TextView
+            android:id="@+id/departureTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="도착"
+            android:textAlignment="center"
+            android:translationX="251dp"
+            android:translationY="37dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/departureArriveTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:translationX="254dp"
+            android:translationY="80dp">
+        </TextView>
+        <TextView
+            android:id="@+id/departureLeaveTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:translationX="52dp"
+            android:translationY="80dp">
+        </TextView>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="1000000원"
+            android:translationX="105dp"
+            android:translationY="125dp"
+
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/seatsLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="10석 남음"
+
+            android:translationX="265dp"
+            android:translationY="165dp">
+        </TextView>
+        <TextView
+            android:id="@+id/leadTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="2시간 30분"
+
+            android:translationX="25dp"
+            android:translationY="165dp">
+        </TextView>
+        <TextView
+            android:id="@+id/flightName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="CA4206"
+
+            android:translationX="151dp"
+            android:translationY="85dp">
+        </TextView>
+        <TextView
+            android:id="@+id/leaveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="2024-07-01"
+
+            android:translationX="40dp"
+            android:translationY="20dp">
+        </TextView>
+        <TextView
+            android:id="@+id/arriveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="2024-07-01"
+
+            android:translationX="242dp"
+            android:translationY="20dp">
+        </TextView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
